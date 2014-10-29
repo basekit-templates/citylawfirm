@@ -64,7 +64,7 @@ h2 {
     padding: 0;
     padding:30px 0px;
     @media @tablet {
-        padding:30px 0px 70px;
+        padding:30px 0px 40px;
     }
 }
 
@@ -94,13 +94,26 @@ h2 {
     }
 }
 
-.header-right{
+.header-right .widget.profile span, 
+.header-right .widget.profile, 
+.header-right .widget.profile a, 
+.header-right .widget.profile p {
     float:right;
+    color:@font-swatch10-color;
+    @media @tablet {
+        float:none;
+    }
+}  
+
+.header-right {
+    float:right;
+    padding:30px 0px;
     @media @tablet {
         width: 100%;
         text-align: center;
+        float:none;
     }
-}   
+}  
 
 /* LOGO */
 
@@ -363,7 +376,11 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
     color:@color-swatch3;
 }
 
-.column.columns-two-right .widget.profile span, .column.columns-two-right .widget.profile, .column.columns-two-right .widget.profile a, .column.columns-two-right .widget.profile p {
+.column.columns-two-right .widget.profile span, 
+.column.columns-two-right .widget.profile, 
+.column.columns-two-right .widget.profile a, 
+.column.columns-two-right .widget.profile p {
     float:right;
+    color:@font-swatch10-color;
 } 
 
