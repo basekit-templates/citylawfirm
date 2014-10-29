@@ -1,8 +1,8 @@
 {
-	"name":"Interact",
-	"thumbnail":"interact.png",
-	"screenshot":"interact.png",
-    "tags": { "en": ["minimal", "clean", "gallery", "blue", "portfolio", "technology", "bright", "images", "modern", "design"] },
+	"name":"CityLawFirm",
+	"thumbnail":"cityawfirm.png",
+	"screenshot":"cityawfirm.png",
+    "tags": { "en": ["minimal", "clean", "blue", "lawyer", "modern", "design"] },
     "pageTypes":["home"],
     "templateType":"standard",
     "colorSwatches":
@@ -19,7 +19,7 @@
         "Swatch 2": {
             "color1":"#ffffff",
             "color2":"#01b4f0",
-            "color3":"#ca1414",
+            "color3":"#B00606",
             "color4":"#000000",
             "color5":"#888888",
             "color6":"#ffffff",
@@ -29,7 +29,7 @@
             "color1":"#ffffff",
             "color2":"#01b4f0",
             "color3":"#4F7391",
-            "color4":"#4F7391",
+            "color4":"#000000",
             "color5":"#888888",
             "color6":"#ffffff",
             "color7":"#eeeeee"
@@ -38,7 +38,7 @@
             "color1":"#ffffff",
             "color2":"#01b4f0",
             "color3":"#73AD5C",
-            "color4":"#73AD5C",
+            "color4":"#000000",
             "color5":"#888888",
             "color6":"#ffffff",
             "color7":"#eeeeee"
@@ -46,8 +46,8 @@
         "Swatch 5": {
             "color1":"#ffffff",
             "color2":"#01b4f0",
-            "color3":"#4BA5A1",
-            "color4":"#4BA5A1",
+            "color3":"#000000",
+            "color4":"#000000",
             "color5":"#888888",
             "color6":"#ffffff",
             "color7":"#eeeeee"
