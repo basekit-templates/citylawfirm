@@ -352,6 +352,8 @@
 	    background-color:@color-swatch3;
 	    color:@font-swatch9-color;
 	    &:hover {
+	    	background-color:darken(@color-swatch3,10%);
+	    	text-decoration: none;
 	    }
 		.text:before {
 			margin: 0;
@@ -390,6 +392,27 @@
 		border-top: 1px solid darken(@color-swatch1,10%);
 		border-bottom: 1px solid darken(@color-swatch1,10%);
 	}
+}
+
+.widget.ecombasket .ecombasket-pull {
+	width: 142px;
+	padding: 15px 14px 15px 38px;
+	background-image: image('/images/ic-basket.png');
+	background-repeat: no-repeat;
+	background-position: 12% 48%;
+	background-size: 21px;
+	background-color:@color-swatch3!important;
+}
+
+.widget.ecombasket .ecombasket-pull:hover {
+	background-color:darken(@color-swatch3,10%)!important;
+}
+
+.widget.ecombasket .ecombasket-pull p, .widget.ecombasket .ecombasket-pull .basket-count {
+	color:@font-swatch9-color!important;
+		&:hover {
+			color:@font-swatch9-color!important;
+		}
 }
 
 // Checkout Table
