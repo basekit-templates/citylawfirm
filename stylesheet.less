@@ -63,6 +63,9 @@ h2 {
     display: block;
     padding: 0;
     padding:30px 0px;
+    @media @tablet {
+        padding:30px 0px 70px;
+    }
 }
 
 /* COMPANY NAME */
@@ -132,11 +135,6 @@ h2 {
     padding:10px 0px;
 }
 
-.widget.extendednavigation .bk-overlay {
-    width:40px;
-    left:inherit!important;
-}
-
 .widget .extendednavigation ul {
     @media @tablet {
          padding-top:0;
@@ -194,6 +192,18 @@ h2 {
     }
 }
 
+.widget .extendednavigation a.pull {
+    width:100%;
+}
+
+.widget .extendednavigation a.pull:after {
+    margin: 0px auto;
+    left: 0;
+    background: @color-swatch3;
+    box-shadow: 0 6px 0 @color-swatch3, 0 12px 0 @color-swatch3;
+}
+
+
 // -----------------------------
 // Feature
 // -----------------------------
@@ -203,6 +213,8 @@ h2 {
     position: absolute;
     right: 0;
     top: 40px;
+-webkit-box-shadow: 0.5px 0.5px 10px 1px #0F0F0F;
+box-shadow: 0.5px 0.5px 10px 1px #0F0F0F;
     @media @tablet {
         position:relative;
         top:0;
@@ -270,7 +282,7 @@ footer.bk-footer {
     padding:20px 0px 10px;
 }
 
-.bk-profile-phone {
+.footer-bar .bk-profile-phone {
     font-family: @font-swatch10-font-family;
     font-size: @font-swatch10-font-size;
     font-weight: @font-swatch10-font-weight;
@@ -279,26 +291,13 @@ footer.bk-footer {
     letter-spacing: @font-swatch10-letter-spacing;
 }
 
-.left-footer .widget.content h1,
-.left-footer .widget.content h2,
-.left-footer .widget.content h3,
-.left-footer .widget.content h4, 
-.left-footer .widget.content p, 
-.left-footer .widget.content span,
-.left-footer .widget.content a,  
-.right-footer .widget.profile span, 
-.right-footer .widget.profile p, 
-.right-footer .widget.profile a {
-    color:@font-swatch7-color;
-    font-weight:@font-swatch7-font-weight;
-}
-
-.right-footer {
-    float:right;
-    @media @mobile {
-        float:none;
-        text-align:center;
-    }
+.header-right .bk-profile-phone {
+    font-family: @font-swatch10-font-family;
+    font-size: @font-swatch10-font-size;
+    font-weight: @font-swatch10-font-weight;
+    line-height: @font-swatch10-line-height;
+    color: @font-swatch10-color;
+    letter-spacing: @font-swatch10-letter-spacing;
 }
 
 .bk-footer .widget.profile {
@@ -363,4 +362,8 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
 .footer-bar .widget .extendednavigation ul li.folder .text {
     color:@color-swatch3;
 }
+
+.column.columns-two-right .widget.profile span, .column.columns-two-right .widget.profile, .column.columns-two-right .widget.profile a, .column.columns-two-right .widget.profile p {
+    float:right;
+} 
 
