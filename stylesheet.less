@@ -329,7 +329,7 @@ h2 {
     margin:0;
     padding: 0;
     -webkit-box-shadow: 0.5px 0.5px 10px 1px #0F0F0F;
-box-shadow: 0.5px 0.5px 10px 1px #0F0F0F;
+    box-shadow: 0.5px 0.5px 10px 1px #0F0F0F;
 }
 
 .widget.feature button {
@@ -458,14 +458,6 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
     font-weight:@font-swatch4-font-weight
 } 
 
-.responsivecolumns .columns-two-left, .columns-two-50-50 .columns-two-left {
-    @media @tablet {
-        margin-bottom:10px;
-        text-align:center;
-        float:none;
-    }
-}
-
 .column.columns-two-right .widget.profile span, .column.columns-two-right .widget.profile, .column.columns-two-right .widget.profile a, .column.columns-two-right .widget.profile p {
     @media @tablet {
         float:none;
@@ -479,11 +471,12 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
     }
 }
 
-.responsivecolumns .columns-two-left, .columns-two-50-50 .columns-two-left, .responsivecolumns .columns-two-right, .columns-two-50-50 .columns-two-right {
+.column.columns-two-left .widget.companyname {
+    float:left;
     @media @tablet {
-        width:100%;
-        text-align:center;
-        }
+        margin: 0px auto;
+        display: table;
+    }
 }
 
 footer.bk-footer .widget.profile form button, 
@@ -494,5 +487,9 @@ footer.bk-footer .widget.profile ul.twitter p  {
 
 footer.bk-footer .widget.profile form {
     margin-bottom: 10px;
+}
+
+.responsivecolumns .columns-two-left, .columns-two-50-50 .columns-two-left {
+    margin-bottom:0;
 }
 
