@@ -344,10 +344,6 @@ h2 {
     box-shadow: 0.5px 0.5px 10px 1px #0F0F0F;
 }
 
-.widget.feature button {
-    background: @color-swatch2;
-}
-
 .widget.feature .feature-bgimg {
     height:400px;
 }
@@ -360,6 +356,9 @@ h2 {
     background-color: rgba(0, 0, 0, 0.4);
     margin: 0;
     padding:20px 0px;
+    @media @tablet {
+        padding:20px 2%;
+    }
 }
 
 .widget.feature h2, .widget.feature h3, .feature-btn {
@@ -371,7 +370,7 @@ h2 {
 }
 
 .widget.feature h2, .widget.feature h3 {
-    width:60%;
+    width:58%;
     @media @tablet {
         width:100%;
     }
@@ -470,6 +469,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
     font-weight:@font-swatch4-font-weight;
     @media @mobile {
         float:none;
+        text-align:center;
     }
 } 
 
@@ -482,7 +482,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
     font-weight:@font-swatch4-font-weight;
     @media @mobile {
         float:none;
-        text-align:Center;
+        text-align:center;
     }
 } 
 
