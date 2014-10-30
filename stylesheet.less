@@ -192,6 +192,9 @@ h2 {
     display: block;
     padding: 0;
     background-color:@color-swatch3;
+    @media @tablet {
+        padding-bottom:10px;
+    }
     .page-wrap {
         padding:0;
     }
@@ -200,6 +203,28 @@ h2 {
 .navbar {
     background-color:@color-swatch1;
     padding:10px 0px;
+}
+
+.nav-column-two .widget.profile span,
+.nav-column-two .widget.profile,
+.nav-column-two .widget.profile a,
+.nav-column-two .widget.profile p, {
+    color:@font-swatch9-color;
+    font-weight:@font-swatch4-font-weight
+    @media @tablet {
+        float:none!important;
+        text-align:center;
+    }
+}
+
+.nav-column-two .widget.profile form button {
+    color:@font-swatch9-color;
+}
+
+.nav-column-two .bk-profile-address p {
+    @media @tablet {
+        float:none!important;
+    }
 }
 
 .widget .extendednavigation ul {
@@ -268,6 +293,11 @@ h2 {
     left: 0;
     background: @color-swatch3;
     box-shadow: 0 6px 0 @color-swatch3, 0 12px 0 @color-swatch3;
+}
+
+.widget.extendednavigation .bk-overlay {
+    width: 100%!important;
+    top: -70px!important;
 }
 
 
@@ -417,18 +447,6 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
 
 .footer-profile .widget.profile form {
     text-align:left;
-}
-
-.nav-column-two .widget.profile span,
-.nav-column-two .widget.profile,
-.nav-column-two .widget.profile a,
-.nav-column-two .widget.profile p, {
-    color:@font-swatch9-color;
-    font-weight:@font-swatch4-font-weight
-    @media @tablet {
-        float:none!important;
-        text-align:center;
-    }
 }
 
 .column.columns-two-right .widget.profile span, 
