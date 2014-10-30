@@ -5,6 +5,7 @@
     "tags": { "en": ["minimal", "clean", "blue", "lawyer", "modern", "design"] },
     "pageTypes":["home"],
     "templateType":"standard",
+    "images":["/images/feature-bg.jpg"],
     "colorSwatches":
     {
         "Swatch 1": {
