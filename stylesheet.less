@@ -295,9 +295,21 @@ h2 {
     box-shadow: 0 6px 0 @color-swatch3, 0 12px 0 @color-swatch3;
 }
 
+.extendednavigation.js-extendednavigation {
+    .clearfix
+}
+
+.extendednavigation {
+    .clearfix
+}
+
 .widget.extendednavigation .bk-overlay {
-    width: 100%!important;
-    top: -70px!important;
+    width:100%;
+    top:0;
+    @media @tablet {
+        width: 100%!important;
+        top: -70px!important;
+    }
 }
 
 
@@ -470,6 +482,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
     font-weight:@font-swatch4-font-weight;
     @media @mobile {
         float:none;
+        text-align:Center;
     }
 } 
 
