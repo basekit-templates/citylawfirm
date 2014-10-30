@@ -449,13 +449,28 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
     text-align:left;
 }
 
-.column.columns-two-right .widget.profile span, 
-.column.columns-two-right .widget.profile, 
-.column.columns-two-right .widget.profile a, 
-.column.columns-two-right .widget.profile p {
+.footer-bar .column.columns-two-right .widget.profile span, 
+.footer-bar .column.columns-two-right .widget.profile, 
+.footer-bar .column.columns-two-right .widget.profile a, 
+.footer-bar .column.columns-two-right .widget.profile p {
     float:right;
     color:@font-swatch10-color;
-    font-weight:@font-swatch4-font-weight
+    font-weight:@font-swatch4-font-weight;
+    @media @mobile {
+        float:none;
+    }
+} 
+
+.bk-footer .column.columns-two-right .widget.profile span, 
+.bk-footer .column.columns-two-right .widget.profile, 
+.bk-footer .column.columns-two-right .widget.profile a, 
+.bk-footer .column.columns-two-right .widget.profile p {
+    float:right;
+    color:@font-swatch9-color;
+    font-weight:@font-swatch4-font-weight;
+    @media @mobile {
+        float:none;
+    }
 } 
 
 .column.columns-two-right .widget.profile span, .column.columns-two-right .widget.profile, .column.columns-two-right .widget.profile a, .column.columns-two-right .widget.profile p {
@@ -473,9 +488,10 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
 
 .column.columns-two-left .widget.companyname {
     float:left;
-    @media @tablet {
+    @media @mobile {
         margin: 0px auto;
         display: table;
+        float:none!important;
     }
 }
 
