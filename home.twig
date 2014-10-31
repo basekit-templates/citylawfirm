@@ -5,6 +5,7 @@
 
 <header class="bk-header">
     <div class="companyheader page-wrap clearfix">
+    <div class="flex-container">
         <div class="header-left">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
             {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
@@ -13,6 +14,7 @@
             {{widget('profile', 'headercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
         </div>
     </div>
+        </div>
     <div class="nav-container clearfix">
         <div class="page-wrap">
             <div class="nav-column-one">
