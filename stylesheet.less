@@ -95,9 +95,9 @@ h3 {
 .companyheader {
     display: block;
     padding: 0;
-    padding:30px 0px;
+    padding:15px 0px;
     @media @tablet {
-        padding:30px 0px 40px;
+        padding:0px 0px 40px;
     }
 }
 
@@ -429,6 +429,17 @@ footer.bk-footer {
     line-height: @font-swatch10-line-height;
     color: @font-swatch10-color;
     letter-spacing: @font-swatch10-letter-spacing;
+}
+
+.header-right .bk-profile-phone {
+    @media @tablet {
+        font-size: (@font-swatch1-font-size * 0.6);
+        line-height: (@font-swatch1-line-height * 0.6); 
+    }
+    @media @mobile {
+        font-size: (@font-swatch1-font-size * 0.5);
+        line-height: (@font-swatch1-line-height * 0.5); 
+    }
 }
 
 .bk-footer .widget.profile {
