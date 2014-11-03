@@ -141,16 +141,19 @@ h2 {
         width: 100%;
         text-align: center;
         float:none;
-        padding:40px 0px;
     }
 }  
 
 /* LOGO */
 
 .widget.logo {
-  display: block;
-  margin-right: 2px;
-  padding-top: 6px;
+    display: block;
+    margin-right: 2px;
+    padding-top: 6px;
+    @media @tablet {
+        width:100%;
+        text-align:center;
+    }
 }
 
 .widget {
@@ -259,7 +262,10 @@ h2 {
 }
 
 .widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
-    padding:15px 20px;
+    padding:10px 20px;
+    @media @tablet {
+        padding:10px 0px;
+    }
 }
 
 .widget .extendednavigation ul li.folder:after {
@@ -272,6 +278,13 @@ h2 {
 
 .widget .extendednavigation ul li a {
     padding:10px 20px;
+    @media @tablet {
+        padding:10px 0px;
+    }
+}
+
+.widget .extendednavigation ul li.folder ul li a {
+     padding:10px 20px;
 }
 
 .widget .extendednavigation ul li a:hover, .widget .extendednavigation ul li.folder .text:hover {
@@ -280,7 +293,7 @@ h2 {
 }
 
 .widget .extendednavigation ul li:hover ul {
-    background-color:@color-swatch3;
+    background-color:darken(@color-swatch3,10%);
     @media @tablet {
         margin:0;
         background-color:darken(@color-swatch3,10%);
