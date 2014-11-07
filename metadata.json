@@ -116,6 +116,7 @@
             "line-height": "24px",
             "color": "@color-swatch3",
             "letter-spacing": "1px",
+            "color-hover": "@color-swatch3",
             "background-color": "@color-swatch3",
             "background-color-hover": "darken(@color-swatch3,10%)"
         },
