@@ -3,9 +3,9 @@
 // -----------------------------
 
 @import "@{templateCommon}/basekit-bootstrap.less";
-// @import "@{templateLocal}/css/widgets.less";
-// @import "@{templateLocal}/css/ecommerce.less";
-// @import "@{templateLocal}/css/layout-header.less";
+@import "@{templateLocal}/css/widgets.less";
+@import "@{templateLocal}/css/ecommerce.less";
+@import "@{templateLocal}/css/layout-header.less";
 
 // -----------------------------
 // Page Settings
@@ -90,7 +90,6 @@ h3 {
     flex: 1 1 auto;
 }
 
-
 // -----------------------------
 // Header
 // -----------------------------
@@ -172,180 +171,217 @@ h3 {
     }
 }
 
+
+
 // -----------------------------
-// Extended Navigation
+// Feature
 // -----------------------------
 
-.nav-container .widget.profile {
-    float:right;
-    @media @tablet {
-        float:none;
-        text-align:center;
-    }
-}
-
-.nav-column-one {
-    width:70%;
-    display:inline-block;
-    float:left;
-    @media @tablet {
-        width:100%;
-    }
-}
-
-.nav-column-two{
-    width:30%;
-    display:inline-block;
-    float:right;
-    padding-top:5px;
-    @media @tablet {
-        width:100%;
-    }
-}
-
-.nav-column-two .map {
-    padding-bottom:5px;
-}
-
-.nav-container {
+.feature-btn {
     display: block;
-    padding: 0;
-    background-color:@color-swatch3;
-    .page-wrap {
-        padding:0;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    @media @tablet {
+        position:relative;
+        top:0;
+    }
+    .btn span {
+        background-color: @color-swatch3;
+        padding: 20px;
+        display: table;
+        color:@font-swatch6-color;
+        &:hover {
+           background-color: darken(@color-swatch3,5%);
+        }
     }
 }
 
-.navbar {
-    background-color:@color-swatch1;
-    padding:10px 0px;
+.widget.feature .feature-bgimg .content button {
+    margin:0;
+    padding: 0;
+    -webkit-box-shadow: 0.5px 0.5px 10px 1px #0F0F0F;
+    box-shadow: 0.5px 0.5px 10px 1px #0F0F0F;
 }
 
-.nav-column-two .widget.profile span,
-.nav-column-two .widget.profile,
-.nav-column-two .widget.profile a,
-.nav-column-two .widget.profile p, {
-    color:@font-swatch9-color;
-    font-weight:@font-swatch4-font-weight
+.widget.feature .feature-bgimg {
+    height:400px;
+}
+
+.widget.feature .feature-bgimg .content .spare {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    padding:20px 0px;
     @media @tablet {
-        float:none!important;
+        padding:20px 2%;
+    }
+}
+
+.widget.feature h2, .widget.feature h3, .feature-btn {
+    margin:0 15%;
+    @media @tablet {
+        margin:0;
         text-align:center;
     }
 }
 
-.nav-column-two .widget.profile form button {
-    color:@font-swatch9-color;
-}
-
-.nav-column-two .bk-profile-address p {
+.widget.feature h2, .widget.feature h3 {
+    width:58%;
     @media @tablet {
-        float:none!important;
+        width:100%;
     }
 }
 
-.widget .extendednavigation ul {
+// -----------------------------
+// Footer
+// -----------------------------
+
+.footer-bar {
+    background-color:@color-swatch7;
+    padding:30px 0px;
+}
+
+footer.bk-footer {
+	background-color:@color-swatch3;
+    padding:20px 0px 10px;
+}
+
+.header-right .bk-profile-phone, .footer-bar .bk-profile-phone {
+    font-family: @font-swatch10-font-family;
+    font-size: @font-swatch10-font-size;
+    font-weight: @font-swatch10-font-weight;
+    line-height: @font-swatch10-line-height;
+    color: @font-swatch10-color;
+    letter-spacing: @font-swatch10-letter-spacing;
+}
+
+.header-right .bk-profile-phone {
     @media @tablet {
-         padding-top:0;
-         margin:10px 0px 0px;
+        font-size: (@font-swatch1-font-size * 0.6);
+        line-height: (@font-swatch1-line-height * 0.6); 
     }
-    li {
-        padding:0;
-        border-bottom:0;
-    }
-}
-
-.widget .extendednavigation ul li a span.text {
-    @media @tablet {
-        padding:0;
-        border:0;
+    @media @mobile {
+        font-size: (@font-swatch1-font-size * 0.5);
+        line-height: (@font-swatch1-line-height * 0.5); 
     }
 }
 
-.widget .extendednavigation ul li.folder {
+.bk-footer .widget.profile {
+    color: @color-swatch1;
+    font-weight: 400;
+}
+
+footer .widget.profile .bk-profile-socialicons span a {
+    background-color:@color-swatch3;
+    &:hover {    
+        background-color:darken(@color-swatch3,10%);
+    }
+}
+
+.widget.profile .bk-profile-socialicons {
     margin:0;
 }
 
-.widget .extendednavigation ul li.folder ul li a span.text {
-    padding-right:0px;
+.widget.socialicons span a, .widget.profile .bk-profile-socialicons span a {
+  text-align:center;
 }
 
-.widget .extendednavigation ul li.folder:after {
-  border-top-color:@font-swatch6-color;
+.bk-profile-address p {
+    color: @font-swatch1-color;
+    float:left!important;
+    padding-right:5px;
 }
 
-.widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
-    padding:10px 25px;
-    @media @tablet {
-        padding:10px 0px;
+.left-footer {
+    @media @mobile {
+        text-align:center;
     }
 }
 
-.widget .extendednavigation ul li.folder:after {
-    top:48%;
-}
-
-.widget .extendednavigation ul li.folder:after {
-    border-top-color: @color-swatch1;
-}
-
-.widget .extendednavigation ul li a {
-    padding:10px 25px;
-    @media @tablet {
-        padding:10px 0px;
+footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, .widget.profile p {
+    @media @mobile {
+        text-align:center;
+        float:none;
     }
 }
 
-.widget .extendednavigation ul li.folder ul li a {
-     padding:10px 20px;
+.footer-profile {
+    display:inline-block;
+    float:left;
+    width:100%;
+    @media @mobile {
+        float:none;
+    }
 }
 
-.widget .extendednavigation ul li a:hover, .widget .extendednavigation ul li.folder .text:hover {
-    text-decoration: underline;
+.footer-profile .widget.profile form {
+    text-align:left;
+}
+
+.footer-bar .column.columns-two-right .widget.profile span, 
+.footer-bar .column.columns-two-right .widget.profile, 
+.footer-bar .column.columns-two-right .widget.profile a, 
+.footer-bar .column.columns-two-right .widget.profile p {
+    float:right;
+    color:@font-swatch10-color;
+    font-weight:@font-swatch4-font-weight;
+    padding-top:8px;
+    @media @mobile {
+        float:none;
+        text-align:center;
+    }
+} 
+
+.bk-footer .column.columns-two-right .widget.profile span, 
+.bk-footer .column.columns-two-right .widget.profile, 
+.bk-footer .column.columns-two-right .widget.profile a, 
+.bk-footer .column.columns-two-right .widget.profile p {
+    float:right;
+    color:@font-swatch9-color;
+    font-weight:@font-swatch4-font-weight;
+    @media @mobile {
+        float:none;
+        text-align:center;
+    }
+} 
+
+.column.columns-two-right .widget.profile span, .column.columns-two-right .widget.profile, .column.columns-two-right .widget.profile a, .column.columns-two-right .widget.profile p {
+    @media @tablet {
+        float:none;
+    }
+}
+
+.column.columns-two-right .widget.profile p {
+    @media @tablet {
+        width:100%;
+        text-align:Center;
+    }
+}
+
+.column.columns-two-left .widget.companyname {
+    float:left;
+    @media @mobile {
+        margin: 0px auto;
+        display: table;
+        float:none!important;
+    }
+}
+
+footer.bk-footer .widget.profile form button, 
+footer.bk-footer .bk-profile-address p,
+footer.bk-footer .widget.profile ul.twitter p  {
     color:@font-swatch9-color;
 }
 
-.widget .extendednavigation ul li:hover ul {
-    background-color:darken(@color-swatch3,10%);
-    right:-2px;
-    @media @tablet {
-        margin:0;
-        background-color:darken(@color-swatch3,10%);
-        right:0;
-    }
+footer.bk-footer .widget.profile form {
+    margin-bottom: 10px;
 }
 
-.widget .extendednavigation a.pull {
-    width:100%;
-    @media @tablet {
-        top: -35px;
-    }
+.responsivecolumns .columns-two-left, .columns-two-50-50 .columns-two-left {
+    margin-bottom:0;
 }
 
-.widget .extendednavigation a.pull:after {
-    margin: 0px auto;
-    left: 0;
-    background: @color-swatch3;
-    box-shadow: 0 6px 0 @color-swatch3, 0 12px 0 @color-swatch3;
-}
-
-.extendednavigation.js-extendednavigation {
-    .clearfix
-}
-
-.extendednavigation {
-    .clearfix
-}
-
-.widget.extendednavigation .bk-overlay {
-    width:100%;
-    top:0;
-    @media @tablet {
-        width: 100%!important;
-        top: -70px!important;
-    }
-}
-
-.widget .extendednavigation ul.align-right li.folder:after {
-    left: 5px;
-    right: inherit;
-}
