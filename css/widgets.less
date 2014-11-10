@@ -186,6 +186,10 @@ button.btn,
     background-image: image('/images/button-arrow.png');
 	background-repeat: no-repeat;
 	background-position: top 14px right 24px;
+	&:hover {
+		background-color:@font-swatch7-background-color-hover;
+		text-decoration: none;
+	}
 }
 
 .blog-list-footer a {
@@ -215,10 +219,6 @@ button.btn,
 	background-position: top 18px right 24px;
 	margin-top:10px;
 	background-color:transparent;
-	&:hover {
-		background-color:transparent;
-		text-decoration: underline;
-	}
 } 
 
 .blog-post-more-link a {
@@ -269,10 +269,7 @@ button.btn,
 	color: @font-swatch7-color;
 }
 
-button:hover, .widget.button button:hover {
-	background-color:transparent;
-	text-decoration: underline;
-}
+
 
 // PayPal, Dropbox, Tweet Overrides
 .widget.paypalbuynow .widget.button.paypal,
