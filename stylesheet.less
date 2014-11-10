@@ -3,3 +3,89 @@
 // -----------------------------
 
 @import "@{templateCommon}/basekit-bootstrap.less";
+// @import "@{templateLocal}/css/widgets.less";
+// @import "@{templateLocal}/css/ecommerce.less";
+// @import "@{templateLocal}/css/layout-header.less";
+
+// -----------------------------
+// Page Settings
+// -----------------------------
+
+body {
+    width: 100%; 
+    height: 100%;
+    background-position: 0px 0px;
+    background-color:@color-swatch1;
+}
+
+// Wrapper 
+
+.page-wrap {
+    width:70%;
+    margin: 0px auto;
+    @media (max-width: 1024px) {
+        width: 90%;
+        margin: 0px 5%;
+    @media @tablet {
+        width: 90%;
+        margin: 0px 5%;
+        }
+    }
+}
+
+ul, li {
+    margin: 0;
+}
+
+h1 {
+    @media @mobile {
+        font-size: (@font-swatch9-font-size * 1.4);
+        line-height: (@font-swatch9-line-height * 1.4); 
+    }
+}
+
+h2 {
+    @media @mobile {
+        font-size: (@font-swatch9-font-size * 1.2);
+        line-height: (@font-swatch9-line-height * 1.2); 
+    }
+}
+
+h3 {
+    @media @mobile {
+        font-size: (@font-swatch9-font-size * 1.1);
+        line-height: (@font-swatch9-line-height * 1.1); 
+    }
+}
+
+.mainzone {
+    padding:20px 0px;
+}
+
+// ------------------------------------------
+// #Default page sticky footer
+// ------------------------------------------
+
+.bk-default {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;    
+    min-height: 100vh;
+    flex-direction: column;
+     -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    @media @tablet {
+        display: initial;
+    }
+}
+
+.bk-default .page-wrap {
+    flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
