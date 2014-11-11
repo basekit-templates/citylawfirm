@@ -180,12 +180,20 @@ button.btn,
 .widget.ecombasket .ecombasket-pull,
 .ecombasket-checkout-link,
 .widget.ecomcheckout .checkout-order-button {
+<<<<<<< HEAD
 	background-color:transparent!important;
+=======
+	background-color: @color-swatch3;
+>>>>>>> 509e115dcd0373457011717fa6d32fcf37184dd1
     color:@font-swatch7-color;
-    padding:10px 50px 10px 0px;
+    padding:10px 50px 10px 20px;
     background-image: image('/images/button-arrow.png');
 	background-repeat: no-repeat;
 	background-position: top 14px right 24px;
+	&:hover {
+		background-color:@font-swatch7-background-color-hover;
+		text-decoration: none;
+	}
 }
 
 .blog-list-footer a {
@@ -215,10 +223,6 @@ button.btn,
 	background-position: top 18px right 24px;
 	margin-top:10px;
 	background-color:transparent;
-	&:hover {
-		background-color:transparent;
-		text-decoration: underline;
-	}
 } 
 
 .blog-post-more-link a {
@@ -269,10 +273,14 @@ button.btn,
 	color: @font-swatch7-color;
 }
 
+<<<<<<< HEAD
 button:hover, .widget.button button:hover {
 	background-color:transparent!important;
 	text-decoration: underline;
 }
+=======
+
+>>>>>>> 509e115dcd0373457011717fa6d32fcf37184dd1
 
 // PayPal, Dropbox, Tweet Overrides
 .widget.paypalbuynow .widget.button.paypal,
