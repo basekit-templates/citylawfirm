@@ -87,7 +87,7 @@ textarea,
 		margin-top:13px;
 		&:hover {
 			background-color:transparent;
-			text-decoration: underline;
+			text-decoration: underline!important;
 		}
 	}
 }
@@ -112,7 +112,7 @@ textarea,
 
 .widget.profile form button:hover {
 	background-color:transparent;
-	text-decoration: underline;
+	text-decoration: underline!important;
 }
 
 .signupform {
@@ -169,7 +169,6 @@ label {
 
 // General
 .widget.button button,
-button.btn, 
 .widget.profile form button, 
 .contactform button.btn, 
 .btn,
@@ -183,13 +182,13 @@ button.btn,
 	background-color:transparent!important;
 	background-color: @color-swatch3;
     color:@font-swatch7-color;
-    padding:10px 50px 10px 20px;
+    padding:10px 50px 10px 0px;
     background-image: image('/images/button-arrow.png');
 	background-repeat: no-repeat;
 	background-position: top 14px right 24px;
 	&:hover {
 		background-color:@font-swatch7-background-color-hover;
-		text-decoration: none;
+		text-decoration: underline!important;
 	}
 }
 
@@ -220,6 +219,10 @@ button.btn,
 	background-position: top 18px right 24px;
 	margin-top:10px;
 	background-color:transparent;
+	&:hover {
+		background-color:transparent!important;
+		text-decoration: underline!important;
+	}
 } 
 
 .blog-post-more-link a {
@@ -231,6 +234,7 @@ button.btn,
 	line-height: @font-swatch7-line-height;
 	letter-spacing: @font-swatch7-letter-spacing;
 	background-position: top 11px right 24px;
+	padding:10px 50px 10px 0px;
 }
 
 .blogsearch form button {
@@ -242,6 +246,10 @@ button.btn,
 	line-height: @font-swatch7-line-height;
 	letter-spacing: @font-swatch7-letter-spacing;
 	background-position: top 14px right 24px;
+	&:hover {
+		background-color:transparent!important;
+		text-decoration: underline!important;
+	}
 }
 
 .widget.clicktocall a {
@@ -256,8 +264,12 @@ button.btn,
 
 .widget.tweet a, .widget.dropbox button, .widget.paypalbuynow .widget.button.paypal {
 	padding:15px 20px 15px 40px;
-	background-color:@font-swatch7-background-color;
+	background-color:@font-swatch7-background-color!important;
     color:@font-swatch6-color;
+    &:hover {
+    	background-color: @font-swatch7-background-color-hover!important;
+    	text-decoration: none!important;
+    }
 }
 
 .blogsearch form button {
@@ -272,7 +284,7 @@ button.btn,
 
 button:hover, .widget.button button:hover {
 	background-color:transparent!important;
-	text-decoration: underline;
+	text-decoration: underline!important;
 }
 
 
@@ -295,6 +307,7 @@ button:hover, .widget.button button:hover {
 .widget.dropbox {
 	button {
 		background-position: top 17px left 10px;
+		background-color:@font-swatch7-background-color;
 	}
 	.file-name {
 		margin-left: 10px;
@@ -889,6 +902,7 @@ button:hover, .widget.button button:hover {
 		&:hover {
 			cursor: pointer;
 			background-color:@font-swatch7-background-color-hover;
+			text-decoration: underline;
 		}
 	}
 }

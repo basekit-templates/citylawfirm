@@ -355,7 +355,7 @@
 	    color:@font-swatch9-color;
 	    &:hover {
 	    	background-color:darken(@color-swatch3,10%)!important;
-	    	text-decoration: none;
+	    	text-decoration: none!important;
 	    }
 		.text:before {
 			margin: 0;
@@ -521,13 +521,13 @@
 				button {
 					width: 25px;
 					height: 25px;
-					background-color: @color-swatch3;
+					background-color:@font-swatch7-background-color!important;
 					font-size: 13px;
 					font-family: @font-swatch4-font-family;
 					color: @color-swatch1;
 					line-height: 17px;
 					&:hover {
-						background-color: @color-swatch2;
+						background-color:@font-swatch7-background-color-hover;
 					}
 					&:focus {
 						outline: none;
@@ -820,11 +820,12 @@
           box-shadow: none;
           border:0;
           color:@color-swatch1;
-          background-color:@color-swatch3;
+          background-color:@color-swatch3!important;
           margin: 0;
           background-image:none;
       &:hover {
-        background-color:darken(@color-swatch3,10%);
+        	background-color:darken(@color-swatch3,10%)!important;
+        	text-decoration: none!important;
       }
         }
       }
