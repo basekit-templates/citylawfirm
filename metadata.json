@@ -1,63 +1,73 @@
 {
-	"name":"City Law Firm",
-	"thumbnail":"citylawfirm.png",
-	"screenshot":"citylawfirm.png",
-    "tags": { "en": ["minimal", "clean", "blue", "lawyer", "modern", "design"] },
-    "pageTypes":["home"],
-    "templateType":"standard",
-    "colorSwatches":
-    {
+    "name": "City Law Firm",
+    "thumbnail": "citylawfirm.png",
+    "screenshot": "citylawfirm-screenshot.jpg",
+    "tags": {
+        "en": [
+            "minimal",
+            "clean",
+            "blue",
+            "lawyer",
+            "modern",
+            "design"
+        ]
+    },
+    "pageTypes": [
+        "home"
+    ],
+    "templateType": "standard",
+    "colorSwatches": {
         "Swatch 1": {
-            "color1":"#ffffff",
-            "color2":"#01b4f0",
-            "color3":"#004989",
-            "color4":"#000000",
-            "color5":"#747474",
-            "color6":"#ffffff",
-            "color7":"#eaeaea"
+            "color1": "#ffffff",
+            "color2": "#01b4f0",
+            "color3": "#004989",
+            "color4": "#000000",
+            "color5": "#747474",
+            "color6": "#ffffff",
+            "color7": "#eaeaea"
         },
         "Swatch 2": {
-            "color1":"#ffffff",
-            "color2":"#01b4f0",
-            "color3":"#B00606",
-            "color4":"#000000",
-            "color5":"#888888",
-            "color6":"#ffffff",
-            "color7":"#eeeeee"
+            "color1": "#ffffff",
+            "color2": "#01b4f0",
+            "color3": "#B00606",
+            "color4": "#000000",
+            "color5": "#888888",
+            "color6": "#ffffff",
+            "color7": "#eeeeee"
         },
         "Swatch 3": {
-            "color1":"#ffffff",
-            "color2":"#01b4f0",
-            "color3":"#4F7391",
-            "color4":"#000000",
-            "color5":"#888888",
-            "color6":"#ffffff",
-            "color7":"#eeeeee"
+            "color1": "#ffffff",
+            "color2": "#01b4f0",
+            "color3": "#4F7391",
+            "color4": "#000000",
+            "color5": "#888888",
+            "color6": "#ffffff",
+            "color7": "#eeeeee"
         },
         "Swatch 4": {
-            "color1":"#ffffff",
-            "color2":"#01b4f0",
-            "color3":"#73AD5C",
-            "color4":"#000000",
-            "color5":"#888888",
-            "color6":"#ffffff",
-            "color7":"#eeeeee"
+            "color1": "#ffffff",
+            "color2": "#01b4f0",
+            "color3": "#73AD5C",
+            "color4": "#000000",
+            "color5": "#888888",
+            "color6": "#ffffff",
+            "color7": "#eeeeee"
         },
         "Swatch 5": {
-            "color1":"#ffffff",
-            "color2":"#01b4f0",
-            "color3":"#000000",
-            "color4":"#000000",
-            "color5":"#888888",
-            "color6":"#ffffff",
-            "color7":"#eeeeee"
+            "color1": "#ffffff",
+            "color2": "#01b4f0",
+            "color3": "#000000",
+            "color4": "#000000",
+            "color5": "#888888",
+            "color6": "#ffffff",
+            "color7": "#eeeeee"
         }
     },
-    "images":[
+    "images": [
         "images/feature-bg.jpg"
     ],
     "fontSwatch": {
-       "title": "Signika",
+        "title": "Signika",
         "font1": {
             "font-family": "\"Lora\", Georgia, serif",
             "font-size": "42px",
@@ -108,7 +118,7 @@
             "color-hover": "@color-swatch3",
             "background-color": "@color-swatch2",
             "background-color-hover": "@color-swatch2"
-         },
+        },
         "font7": {
             "font-family": "\"Lora\", Georgia, serif",
             "font-size": "16px",
