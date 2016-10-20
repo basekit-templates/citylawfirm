@@ -2,6 +2,7 @@
 // Imports
 // -----------------------------
 
+@import "@{templateLocal}/vars.less";
 @import "@{templateCommon}/basekit-bootstrap.less";
 @import "@{templateLocal}/css/widgets.less";
 @import "@{templateLocal}/css/ecommerce.less";
@@ -12,13 +13,13 @@
 // -----------------------------
 
 body {
-    width: 100%; 
+    width: 100%;
     height: 100%;
     background-position: 0px 0px;
     background-color:@color-swatch1;
 }
 
-// Wrapper 
+// Wrapper
 
 .page-wrap {
     width:70%;
@@ -26,10 +27,10 @@ body {
     @media (max-width: 1024px) {
         width: 90%;
         margin: 0px 5%;
+    }
     @media @tablet {
         width: 90%;
         margin: 0px 5%;
-        }
     }
 }
 
@@ -40,21 +41,21 @@ ul, li {
 h1 {
     @media @mobile {
         font-size: (@font-swatch9-font-size * 1.4);
-        line-height: (@font-swatch9-line-height * 1.4); 
+        line-height: (@font-swatch9-line-height * 1.4);
     }
 }
 
 h2 {
     @media @mobile {
         font-size: (@font-swatch9-font-size * 1.2);
-        line-height: (@font-swatch9-line-height * 1.2); 
+        line-height: (@font-swatch9-line-height * 1.2);
     }
 }
 
 h3 {
     @media @mobile {
         font-size: (@font-swatch9-font-size * 1.1);
-        line-height: (@font-swatch9-line-height * 1.1); 
+        line-height: (@font-swatch9-line-height * 1.1);
     }
 }
 
@@ -71,7 +72,7 @@ h3 {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;    
+    display: flex;
     min-height: 100vh;
     flex-direction: column;
      -webkit-flex-direction: column;
@@ -127,9 +128,9 @@ h3 {
     }
 }
 
-.header-right .widget.profile span, 
-.header-right .widget.profile, 
-.header-right .widget.profile a, 
+.header-right .widget.profile span,
+.header-right .widget.profile,
+.header-right .widget.profile a,
 .header-right .widget.profile p {
     float:right;
     color:@font-swatch10-color;
@@ -137,7 +138,7 @@ h3 {
     @media @tablet {
         float:none!important;
     }
-}  
+}
 
 .header-right {
     padding:20px 0px;
@@ -147,7 +148,7 @@ h3 {
         text-align: center;
         float:none;
     }
-}  
+}
 
 /* LOGO */
 
@@ -436,11 +437,11 @@ footer.bk-footer {
 .header-right .bk-profile-phone {
     @media @tablet {
         font-size: (@font-swatch1-font-size * 0.6);
-        line-height: (@font-swatch1-line-height * 0.6); 
+        line-height: (@font-swatch1-line-height * 0.6);
     }
     @media @mobile {
         font-size: (@font-swatch1-font-size * 0.5);
-        line-height: (@font-swatch1-line-height * 0.5); 
+        line-height: (@font-swatch1-line-height * 0.5);
     }
 }
 
@@ -451,7 +452,7 @@ footer.bk-footer {
 
 footer .widget.profile .bk-profile-socialicons span a {
     background-color:@color-swatch3;
-    &:hover {    
+    &:hover {
         background-color:darken(@color-swatch3,10%);
     }
 }
@@ -476,7 +477,7 @@ footer .widget.profile .bk-profile-socialicons span a {
         &:last-of-type:after {
             display: none;
         }
-    }  
+    }
 }
 
 
@@ -506,9 +507,9 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
     text-align:left;
 }
 
-.footer-bar .column.columns-two-right .widget.profile span, 
-.footer-bar .column.columns-two-right .widget.profile, 
-.footer-bar .column.columns-two-right .widget.profile a, 
+.footer-bar .column.columns-two-right .widget.profile span,
+.footer-bar .column.columns-two-right .widget.profile,
+.footer-bar .column.columns-two-right .widget.profile a,
 .footer-bar .column.columns-two-right .widget.profile p {
     float:right;
     color:@font-swatch10-color;
@@ -518,11 +519,11 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
         float:none;
         text-align:center;
     }
-} 
+}
 
-.bk-footer .column.columns-two-right .widget.profile span, 
-.bk-footer .column.columns-two-right .widget.profile, 
-.bk-footer .column.columns-two-right .widget.profile a, 
+.bk-footer .column.columns-two-right .widget.profile span,
+.bk-footer .column.columns-two-right .widget.profile,
+.bk-footer .column.columns-two-right .widget.profile a,
 .bk-footer .column.columns-two-right .widget.profile p {
     float:right;
     color:@font-swatch9-color;
@@ -531,7 +532,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
         float:none;
         text-align:center;
     }
-} 
+}
 
 .column.columns-two-right .widget.profile span, .column.columns-two-right .widget.profile, .column.columns-two-right .widget.profile a, .column.columns-two-right .widget.profile p {
     @media @tablet {
@@ -555,7 +556,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
     }
 }
 
-footer.bk-footer .widget.profile form button, 
+footer.bk-footer .widget.profile form button,
 footer.bk-footer .bk-profile-address p,
 footer.bk-footer .widget.profile ul.twitter p  {
     color:@font-swatch9-color;
